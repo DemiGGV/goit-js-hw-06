@@ -63,7 +63,7 @@ function onCreate() {
 function createBoxes(amount) {
   let markup = [];
   for (let i = 0; i < amount; i++) {
-    markup.push(`<div style="display:box; background-color: ${getRandomHexColor()}; width: ${10*i + 30}px; height: ${10*i + 30}px"></div>`);
+    markup.push(`<div style="background-color: ${getRandomHexColor()}; width: ${10*i + 30}px; height: ${10*i + 30}px"></div>`);
   }
   return(markup);
 }
