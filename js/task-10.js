@@ -47,11 +47,15 @@ refs.btnCreate.addEventListener('click', onCreate);
 refs.btnDestroy.addEventListener('click', onDestroy);
 
 function onCreate() {
-  const amount = refs.inpNum.value;
+  let amount = refs.inpNum.value;
   if (!amount) {
     alert('Please input a value!');
     return
   }
+  if (amount > 100) {
+    amount = 100;
+  }
+  refs.placeDiv.innerHTML = '';
   const divTree = createBoxes(amount);
   refs.placeDiv.insertAdjacentHTML('beforeend', divTree);
 }
