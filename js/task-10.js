@@ -48,7 +48,7 @@ refs.btnDestroy.addEventListener('click', onDestroy);
 
 function onCreate() {
   let amount = refs.inpNum.value;
-  if (!amount) {
+  if (!amount || amount == '0') {
     alert('Please input a value!');
     return
   }
