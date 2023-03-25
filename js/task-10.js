@@ -57,7 +57,7 @@ function onCreate() {
   }
   refs.placeDiv.innerHTML = '';
   const divTree = createBoxes(amount);
-  refs.placeDiv.insertAdjacentHTML('beforeend', divTree);
+  refs.placeDiv.insertAdjacentHTML('beforeend', [...divTree].join(''));
 }
 
 function createBoxes(amount) {
