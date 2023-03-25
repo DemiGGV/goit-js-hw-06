@@ -27,12 +27,9 @@ button {
   display: grid;
   column-gap: 20px;
   grid-template-columns: auto auto auto;
-  flex-basis: calc((100% - 20px) / 3);
-  
+  list-style: none;  
 }
-.gallery li {
-  display: block;
-}
+
 .gallery img {
-  width: 500px;
+  max-width: 500px;
 }
