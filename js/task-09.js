@@ -24,6 +24,7 @@ const refs = {
 refs.btn.addEventListener('click', onProcess);
 
 function onProcess() {
-  refs.spn.textContent = (getRandomHexColor());
-  document.body.style.backgroundColor = getRandomHexColor();
+  const color = getRandomHexColor();
+  refs.spn.textContent = (color);
+  document.body.style.backgroundColor = color;
 }
